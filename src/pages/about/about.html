@@ -1,0 +1,41 @@
+﻿<!-- This is Menu from About Page -->
+<ion-menu [content]="content" class="about" id="AboutPage">
+    <ion-toolbar style="text-align:center;">
+        <ion-title>Menu</ion-title>
+    </ion-toolbar>
+    <ion-content class="menuContent">
+        <ion-list>
+            <ion-item class="menulist" (click)="PageHome()">
+                Home Page
+            </ion-item>
+            <ion-item class="menulist" (click)="PageOne()">
+                Page One
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
+
+<!--About Header-->
+<ion-header>
+    <ion-navbar>
+        <ion-toolbar>
+            <ion-title>About</ion-title>
+            <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+            </button>
+        </ion-toolbar>
+    </ion-navbar>
+</ion-header>
+
+
+
+<!--About Content-->
+<ion-content class="about" padding>
+    <ion-item>
+        <ion-label>About Page</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-label>Please Check Side Menu</ion-label>
+    </ion-item>
+</ion-content>
